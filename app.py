@@ -10,7 +10,7 @@ def index():
 @app.route('/weather', methods=['POST'])
 def weather():
     city = request.form['city']
-    api_key = 'baa6dddd74974e3180cff0f4d73068ac'
+    api_key = 'ENTER API KEY HERE'
     url = f'https://api.weatherbit.io/v2.0/current?city={city}&key={api_key}'
 
     response = requests.get(url).json()
